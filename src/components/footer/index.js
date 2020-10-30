@@ -1,14 +1,9 @@
 import React from 'react';
 
-import './footer.css';
-
-import logo from './copyleft.svg';
+import styles from './footer.module.css';
 
 const Footer = () => (
-  <footer className="footer-container">
-    <img className="footer-logo" src={logo} alt="copyleft logo" />
-    <span>Moises Gonzalez</span>
-  </footer>
-);
+  <div className={styles.container}>© Moises Gonzalez</div>
+)
 
 export default Footer;

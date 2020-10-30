@@ -1,5 +1,15 @@
 @import "variables.css";
 
+@font-face {
+  font-family: Aileron-UltraLight;
+  src: url(../fonts/Aileron-UltraLight.otf);
+}
+
+@font-face {
+  font-family: Aileron-Regular;
+  src: url(../fonts/Aileron-Regular.otf);
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -9,7 +19,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--main-bg-color);
 }
 article,
 aside,
@@ -46,7 +55,6 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   color: var(--main-text-color);
-  text-decoration-style: wavy;
 }
 a:active,
 a:hover {
@@ -204,7 +212,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  cursor: crosshair;
   color: var(--main-text-color);
   font-family: var(--font-family);
   font-weight: normal;

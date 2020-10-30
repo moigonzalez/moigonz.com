@@ -1,68 +1,37 @@
 import React from 'react';
 
-import Grid from './grid';
-import Project from './project';
+import styles from './projects.module.css';
 
-import './projects.css';
+const projectsConfig = [
+  {
+    name: 'MoneySwiper',
+    url: 'https://moneyswiper.de/',
+  },
+  {
+    name: 'pwa-barcode-scanner',
+    url: 'https://pwascanit.com/',
+  },
+  {
+    name: 'weather-preactpi',
+    url: 'https://dev.to/moigonz/show-dev-raspberrypi-weather-fuelled-by-netlify-functions-and-preact-bne',
+  },
+  {
+    name: 'who-arms-the-world',
+    url: 'https://whoarmstheworld.com/',
+  },
+]
 
-const Projects = () => (
-  <>
-    <Grid>
-      <Project
-        title={() => <h2 id="pwa_barcode_scanner" className="project_title">PWA Barcode Scanner</h2>}
-        links={[
-          {
-            text: 'GitHub',
-            link: 'https://github.com/moigonzalez/pwa-barcode-scanner',
-          },
-          {
-            text: 'Live',
-            link: 'https://pwascanit.com/',
-          },
-        ]}
-      />
-      <Project
-        title={() => <h2 id="parrotify_cli" className="project_title">parrotify-cli</h2>}
-        links={[
-          {
-            text: 'GitHub',
-            link: 'https://github.com/moigonzalez/parrotify-cli',
-          },
-          {
-            text: 'NPM',
-            link: 'https://www.npmjs.com/package/parrotify-cli',
-          },
-        ]}
-      />
-      <Project
-        title={() => <h2 className="project_title">WHO ARMS THE WORLD?</h2>}
-        links={[
-          {
-            text: 'GitHub',
-            link: 'https://github.com/moigonzalez/who-arms-the-world',
-          },
-          {
-            text: 'Live',
-            link: 'https://whoarmstheworld.com/',
-          },
-        ]}
-      />
-      <Project
-        title={() => <h2 id="camemoji" className="project_title">camemoji</h2>}
-        links={[
-          {
-            text: 'GitHub',
-            link: 'https://github.com/moigonzalez/camemoji',
-          },
-        ]}
-      />
-      <div className="overlay">
-        <svg viewBox="0 0 88 20" className="overlay_text">
-          <text x="1" y="15">PROJECTS</text>
-        </svg>
-      </div>
-    </Grid>
-  </>
-);
+const Projects = () => {
+  return <section className={styles.container}>
+    <h1 className={styles.title}>Projects</h1>
+    <div className={styles.content}>
+      {projectsConfig.map(x =>
+        <a key={x.name} className={styles.item} href={x.url}>
+          <span>{x.name}</span>
+        </a>
+      )}
+    </div>
+  </section>
+}
 
 export default Projects;
