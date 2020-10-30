@@ -1,0 +1,5 @@
+@media (max-width: 560px) {
+  .gatsby-image-wrapper.horizontal {
+    width: 200% !important;
+  }
+}

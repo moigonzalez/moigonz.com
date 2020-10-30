@@ -1,8 +1,26 @@
 :root {
-  --main-bg-color: #CC2800;
+  --main-bg-color: hsla(0, 0%, 0%, 0.93);
   --main-text-color: hsla(0, 0%, 0%, 0.8);
-  --font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  --cursor-light: url("../images/cursor_white.png");
-  --cursor-dark: url("../images/cursor_black.png");
+  --font-family: Aileron-UltraLight, Helvetica, sans-serif;
+
+  --spacing-title: 0.2em;
+}
+
+.button {
+  display: inline-block;
+  font-family: Aileron-Regular;
+  padding: 14px 20px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  border: solid white 4px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--main-text-color);
+  background: white;
+
+  transition: color, background 0.2s ease-in-out;
 }

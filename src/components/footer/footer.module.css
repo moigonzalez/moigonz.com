@@ -1,0 +1,8 @@
+.container {
+  text-align: center;
+  background-color: var(--main-bg-color);
+  color: white;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: bold;
+}

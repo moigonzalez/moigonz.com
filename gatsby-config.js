@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: '🥥 Moises Gonzalez',
-    description: 'I make websites',
-    author: '@moigonzit',
+    title: 'moigonz',
+    description: 'Photography & Web Development',
+    author: '@moigonz',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -11,6 +11,13 @@ module.exports = {
       options: {
         name: 'images',
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pictures',
+        path: `${__dirname}/static/img`,
       },
     },
     'gatsby-transformer-sharp',
