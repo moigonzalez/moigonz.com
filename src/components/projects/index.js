@@ -26,7 +26,7 @@ const Projects = () => {
     <h1 className={styles.title}>Projects</h1>
     <div className={styles.content}>
       {projectsConfig.map(x =>
-        <a key={x.name} className={styles.item} href={x.url}>
+        <a key={x.name} target="_blank" rel="noopenner noreferrer" className={styles.item} href={x.url}>
           <span>{x.name}</span>
         </a>
       )}
