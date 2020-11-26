@@ -15,6 +15,7 @@ const Pictures = ({ edges }) => {
         filename={frontmatter.image.split('/')[frontmatter.image.split('/').length - 1]}
       />
     ))}
+    <span className={styles.arrow}>&gt;</span>
     </section>
   )
 }

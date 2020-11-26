@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -23,5 +24,21 @@
   .image.horizontal {
     width: 200% !important;
   }
+}
+
+.arrow {
+  position: sticky;
+  top: 50%;
+  font-size: 40px;
+  color: #fff;
+  right: 55px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 33px 23px 39px 29px;
+  transform: translateY(-50%);
 }
 
