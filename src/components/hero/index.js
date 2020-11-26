@@ -19,6 +19,9 @@ const Hero = () => (
         <a target="_blank" className="button" rel="noopenner noreferrer" href="https://github.com/moigonzalez">
           github
         </a>
+        <a target="_blank" className="button" rel="noopenner noreferrer" href="https://www.youtube.com/channel/UCYX80lAviPZ5HuNSQIMoTxg">
+          youtube
+        </a>
         <a className="button" href="mailto:hello@moigonz.com">contact</a>
       </div>
     </div>

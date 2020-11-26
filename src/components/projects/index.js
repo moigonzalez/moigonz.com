@@ -24,6 +24,11 @@ const projectsConfig = [
 const Projects = () => {
   return <section className={styles.container}>
     <h1 className={styles.title}>Projects</h1>
+    <h2 className={styles.subtitle}>Films</h2>
+    <div className={styles.content}>
+      <iframe className={styles.video} width="560" height="315" src="https://www.youtube.com/embed/Dd-v4MdMwQs" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    </div>
+    <h2 className={styles.subtitle}>Web Development</h2>
     <div className={styles.content}>
       {projectsConfig.map(x =>
         <a key={x.name} target="_blank" rel="noopenner noreferrer" className={styles.item} href={x.url}>

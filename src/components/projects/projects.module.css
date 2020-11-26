@@ -5,6 +5,7 @@
 
 .title {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .content {
@@ -13,6 +14,10 @@
   width: 100%;
   gap: 18px;
   padding: 24px;
+}
+
+.video {
+  margin: 0 auto;
 }
 
 .item {
