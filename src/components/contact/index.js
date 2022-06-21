@@ -25,10 +25,11 @@ const Contact = () => {
   return (
     <section className={styles.container}>
       <h1 className={styles.title}>Contact</h1>
-      <form className={styles.form} name="contact" action="/" method="POST" data-netlify="true" onSubmit={onSubmit} netlify-honeypot="bot-field">
+      <form className={styles.form} name="contact" action="/" method="POST" data-netlify="true" onSubmit={onSubmit} netlify-honeypot="bot-field" data-netlify-recaptcha="true">
         <p className={styles.hidden}>
           <input name="bot-field" />
         </p>
+        <div data-netlify-recaptcha="true"></div>
         <input type="hidden" name="form-name" value="contact" />
         <div className={styles.inputs}>
           <label className={styles.inputWrapper} htmlFor="email">
