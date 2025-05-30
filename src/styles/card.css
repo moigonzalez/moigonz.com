@@ -57,7 +57,7 @@
 
 .descripcion p{
     font-weight: 300;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .descripcion h1{
@@ -141,7 +141,9 @@ a:hover{
     }
     .descripcion p{
         font-weight: 300;
-        font-size: 15px;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 6px;
     }
     .descripcion .icons{
         margin-top: 18px;
